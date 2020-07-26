@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\ButtonHandler.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceMeshFilter.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\ARCoreAugmentedFaceRig.cs" />
     <Compile Include="Assets\GoogleARCore\Examples\AugmentedFaces\Scripts\AugmentedFacesExampleController.cs" />
@@ -102,6 +103,7 @@
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Gestures\TwistGestureRecognizer.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Gestures\TwoFingerDragGesture.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Gestures\TwoFingerDragGestureRecognizer.cs" />
+    <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\HomeBeachController.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\ManipulationSystem.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Manipulators\ElevationManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Manipulators\Manipulator.cs" />
@@ -109,7 +111,6 @@
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Manipulators\ScaleManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Manipulators\SelectionManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\Manipulators\TranslationManipulator.cs" />
-    <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\ObjectManipulationController.cs" />
     <Compile Include="Assets\GoogleARCore\HomeBeach\Scripts\PawnManipulator.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewInput.cs" />
     <Compile Include="Assets\GoogleARCore\SDK\InstantPreview\Scripts\InstantPreviewManager.cs" />
@@ -257,52 +258,52 @@
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\PointCloud.shader" />
     <None Include="Assets\GoogleARCore\Examples\Common\Materials\Shaders\TransparentShadow.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Editor">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-weaver.Editor">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.SpatialTracking">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.XR.LegacyInputHelpers">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="com.unity.multiplayer-hlapi.Runtime">
-      <HintPath>C:/Users/N/Belegaufgabe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -476,7 +477,7 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="Google.Protobuf">
-      <HintPath>C:/Users/N/Belegaufgabe/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
+      <HintPath>C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/Assets/GoogleARCore/SDK/Plugins/Google.Protobuf.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.10f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>

@@ -22,6 +22,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
 {
     using GoogleARCore;
     using UnityEngine;
+    using UnityEngine.UI;
 
     /// <summary>
     /// Controls the placement of objects via a tap gesture.
@@ -39,10 +40,27 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// </summary>
         public GameObject PawnPrefab;
 
+        public GameObject PawnPrefab2;
+
+        public GameObject DisplayObject;
+
         /// <summary>
         /// Manipulator prefab to attach placed objects to.
         /// </summary>
         public GameObject ManipulatorPrefab;
+
+        public Button Button1;
+
+        public void Start()
+        {
+            DisplayObject = PawnPrefab;
+        }
+
+        public void DebugTest()
+        {
+            DisplayObject = PawnPrefab2;
+            Button1.GetComponentInChildren<Text>().text = "Button Change Test";
+        }
 
         /// <summary>
         /// Returns true if the manipulation can be started for the given gesture.
@@ -94,7 +112,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
                 else
                 {
                     // Instantiate game object at the hit pose.
-                    var gameObject = Instantiate(PawnPrefab, hit.Pose.position, hit.Pose.rotation);
+                    var gameObject = Instantiate(DisplayObject, hit.Pose.position, hit.Pose.rotation);
 
                     // Instantiate manipulator.
                     var manipulator =

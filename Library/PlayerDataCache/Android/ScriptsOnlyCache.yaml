@@ -13,12 +13,12 @@ ScriptsOnlyBuild:
     - GoogleARCore.Examples.Common.RawImageVideoPlayer
     - GoogleARCore.Examples.ObjectManipulation.ElevationManipulator
     - GoogleARCore.Examples.ObjectManipulation.ManipulationSystem
-    - GoogleARCore.Examples.ObjectManipulation.ObjectManipulationController
     - GoogleARCore.Examples.ObjectManipulation.PawnManipulator
     - GoogleARCore.Examples.ObjectManipulation.RotationManipulator
     - GoogleARCore.Examples.ObjectManipulation.ScaleManipulator
     - GoogleARCore.Examples.ObjectManipulation.SelectionManipulator
     - GoogleARCore.Examples.ObjectManipulation.TranslationManipulator
+    - GoogleARCore.HomeBeach.HomeBeachController
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -577,8 +577,8 @@ ScriptsOnlyBuild:
       serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
-    namespaceName: GoogleARCore.Examples.ObjectManipulation
-    className: ObjectManipulationController
+    namespaceName: GoogleARCore.HomeBeach
+    className: HomeBeachController
   - hash:
       serializedVersion: 2
       Hash: 5ad4aa237d47ac2bab17bacb672edf7a
@@ -719,7 +719,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 14cb302be190eb67bf7fb5f1aab28ce0
+      Hash: b8cdf0d01715458874177dcb0e6042e0
     assemblyName: Assembly-CSharp.dll
     namespaceName: GoogleARCore.Examples.ObjectManipulation
     className: PawnManipulator
@@ -915,7 +915,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonHandler
   platform: 13
   scenePathNames:
   - Assets/GoogleARCore/HomeBeach/Scenes/Beach.unity
-  playerPath: C:/Users/N/Belegaufgabe/beach2.apk
+  playerPath: C:/Users/N/Belegaufgabe/button2.apk
