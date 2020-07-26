@@ -21,6 +21,7 @@
 namespace GoogleARCore.Examples.ObjectManipulation
 {
     using GoogleARCore;
+    using System.Linq;
     using UnityEngine;
     using UnityEngine.UI;
 
@@ -38,9 +39,9 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// <summary>
         /// A prefab to place when a raycast from a user touch hits a plane.
         /// </summary>
-        public GameObject PawnPrefab;
+        public GameObject PalmPrefab;
 
-        public GameObject PawnPrefab2;
+        public GameObject BucketPrefab;
 
         public GameObject DisplayObject;
 
@@ -49,18 +50,8 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// </summary>
         public GameObject ManipulatorPrefab;
 
-        public Button Button1;
+        public ToggleGroup ItemsToggle;
 
-        public void Start()
-        {
-            DisplayObject = PawnPrefab;
-        }
-
-        public void DebugTest()
-        {
-            DisplayObject = PawnPrefab2;
-            Button1.GetComponentInChildren<Text>().text = "Button Change Test";
-        }
 
         /// <summary>
         /// Returns true if the manipulation can be started for the given gesture.
@@ -83,6 +74,17 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// <param name="gesture">The current gesture.</param>
         protected override void OnEndManipulation(TapGesture gesture)
         {
+            Toggle selectedItem = ItemsToggle.ActiveToggles().First();
+            string selectedItemName = selectedItem.name;
+            if (selectedItemName.Equals("Palm"))
+            {
+                DisplayObject = PalmPrefab;
+            }
+            else if (selectedItemName.Equals("Bucket"))
+            {
+                DisplayObject = BucketPrefab;
+            }
+
             if (gesture.WasCancelled)
             {
                 return;
