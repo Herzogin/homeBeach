@@ -40,8 +40,10 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// A prefab to place when a raycast from a user touch hits a plane.
         /// </summary>
         public GameObject PalmPrefab;
-
         public GameObject BucketPrefab;
+        public GameObject UmbrellaPrefab;
+        public GameObject ChairPrefab;
+        public GameObject BallPrefab;
 
         public GameObject DisplayObject;
 
@@ -83,6 +85,18 @@ namespace GoogleARCore.Examples.ObjectManipulation
             else if (selectedItemName.Equals("Bucket"))
             {
                 DisplayObject = BucketPrefab;
+            }
+            else if (selectedItemName.Equals("Umbrella"))
+            {
+                DisplayObject = UmbrellaPrefab;
+            }
+            else if (selectedItemName.Equals("Chair"))
+            {
+                DisplayObject = ChairPrefab;
+            }
+            else if (selectedItemName.Equals("Ball"))
+            {
+                DisplayObject = BallPrefab;
             }
 
             if (gesture.WasCancelled)
