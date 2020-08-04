@@ -17,6 +17,13 @@
 //
 // </copyright>
 //-----------------------------------------------------------------------
+//
+//****CHANGE HISTORY******
+//
+//Refactored by Nele Herzog (nele.herzog@student.htw-berlin.de).
+// I changed the name from "ObjectManipulationController" to "HomeBeachController" 
+// and the namespace from "GoogleARCore.Examples.ObjectManipulation" 
+// to "GoogleARCore.HomeBeach".
 
 namespace GoogleARCore.HomeBeach
 {

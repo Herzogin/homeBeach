@@ -17,6 +17,11 @@
 //
 // </copyright>
 //-----------------------------------------------------------------------
+//
+//****CHANGE HISTORY******
+//
+//Refactored by Nele Herzog (nele.herzog@student.htw-berlin.de).
+// Changes are in lines 44-60, 78-109 and 140.
 
 namespace GoogleARCore.Examples.ObjectManipulation
 {
@@ -37,7 +42,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
         public Camera FirstPersonCamera;
 
         /// <summary>
-        /// A prefab to place when a raycast from a user touch hits a plane.
+        /// The prefabs to place when a raycast from a user touch hits a plane.
         /// </summary>
         public GameObject PalmPrefab;
         public GameObject BucketPrefab;
@@ -51,7 +56,7 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// Manipulator prefab to attach placed objects to.
         /// </summary>
         public GameObject ManipulatorPrefab;
-
+        //Toggle Group for beach item toggle buttons
         public ToggleGroup ItemsToggle;
 
 
@@ -75,9 +80,13 @@ namespace GoogleARCore.Examples.ObjectManipulation
         /// </summary>
         /// <param name="gesture">The current gesture.</param>
         protected override void OnEndManipulation(TapGesture gesture)
-        {
+        {   
+            //gets the name of the activated toggle button
             Toggle selectedItem = ItemsToggle.ActiveToggles().First();
             string selectedItemName = selectedItem.name;
+
+            //assigns the respective prefab to the different strings 
+            //and sets the variable "DisplayObject" to its value
             if (selectedItemName.Equals("Palm"))
             {
                 DisplayObject = PalmPrefab;
