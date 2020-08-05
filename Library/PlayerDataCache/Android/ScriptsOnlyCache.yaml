@@ -8,9 +8,7 @@ ScriptsOnlyBuild:
     - GoogleARCore.EnvironmentalLight
     - GoogleARCore.Examples.Common.DetectedPlaneGenerator
     - GoogleARCore.Examples.Common.DetectedPlaneVisualizer
-    - GoogleARCore.Examples.Common.PlaneDiscoveryGuide
     - GoogleARCore.Examples.Common.PointcloudVisualizer
-    - GoogleARCore.Examples.Common.RawImageVideoPlayer
     - GoogleARCore.Examples.ObjectManipulation.ElevationManipulator
     - GoogleARCore.Examples.ObjectManipulation.ManipulationSystem
     - GoogleARCore.Examples.ObjectManipulation.PawnManipulator
@@ -30,11 +28,9 @@ ScriptsOnlyBuild:
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
-    - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
-    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.ToggleGroup
@@ -912,4 +908,4 @@ ScriptsOnlyBuild:
   platform: 13
   scenePathNames:
   - Assets/GoogleARCore/HomeBeach/Scenes/Beach.unity
-  playerPath: C:/Users/N/Belegaufgabe/button2.apk
+  playerPath: C:/Users/N/Desktop/BelegaufgabeMitSand2/Belegaufgabe/BeachUpYourHome.apk
